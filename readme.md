@@ -3,7 +3,8 @@
 ほぼ公式が出しているcmakeのパクリです。  
 参考:https://github.com/pybind/cmake_example  
 
-これを使うと、PythonからC++のソースコードを呼び出すことができる。  
+pybind11とは、PythonからC++を呼び出すことができるという優れものです。  
+std::vectorがPythonのlistになってくれたりといろいろ便利です
 
 ビルド  
 成功すれば、buildディレクトリの中に.soファイルが作られる
@@ -11,7 +12,8 @@
 python setup.py build
 ```
 
-pip install
+pip install  
+実行に成功すると、pip listにmymoduleが追加されているはずです
 ```
 pip install .
 ```
